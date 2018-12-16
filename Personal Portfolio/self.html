@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="responsive.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="background">
+		<div class="container-fluid">
+		<div class="nav">
+			<a class="a" href="#">Home</a>
+			<a class="b" href="#">About Me</a>
+			<a class="c" href="#">Gallery</a>
+			<a class="d" href="#">Contact Info</a>
+		</div>
+		<div class="content">
+			<div class="home">
+				<h1>Noordeep Kaur</h1>
+				<h2> Web developer soon..!!</h2>
+		    </div>
+		<div class="aboutus">
+			<h2><b>Education</b></h2>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Institution</th>
+						<th>Level</th>
+						<th>Marks secured</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Punjab Engineering College,Chandigarh
+						</td>
+						<td>Under-graduation(Currently pursuing)
+						</td>
+						<td>6.60/10.0
+						</td>
+					</tr>
+					<tr>
+						<td>DAV Model School, Sec 15A,Chandigarh
+						</td>
+						<td>12th standard
+						</td>
+						<td>87.5%
+						</td>
+					</tr>
+					<tr>
+						<td>Sacred Heart Convent School
+						</td>
+						<td>10th standard
+						</td>
+						<td>91.8%
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<h3><b>Projects</b></h3>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Project Title</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Authentication API Model using Intrusion Detection System 
+						</td>
+						<td>Users will try to login the website by filling in the credentials and IDS server will authenticate it for the legitimate user.
+						</td>
+					</tr>
+					<tr>
+						<td>Online Food Ordering System
+						</td>
+						<td>Aims at making a website to order food online before the lunch break to get served warm
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<h4><b>Technical Skills</b></h4>
+			<p>Familiar with:<li>C++,C,HTML,CSS,JavaScript,PHP,BootStrap,JSon</li></p>
+		</div>
+		<div class="gallery">
+			<div class="image1">
+				<img src="images/1.jpg" class="img-responsive" height="230" width="230" />
+			</div>
+			<div class="image2">
+				<img src="images/2.jpg" class="img-responsive" height="230" width="230" />
+			</div>
+			<div class="image3">
+				<img src="images/3.jpg" class="img-responsive" height="230" width="230" />
+			</div>
+			<div class="image4">
+				<img src="images/4.jpg" class="img-responsive" height="230" width="230" />
+			</div>
+			<div class="image5">
+				<img src="images/5.jpg" class="img-responsive" height="230" width="230" />
+			</div>
+			<div class="image6">
+				<img src="images/6.jpg" class="img-responsive" height="230" width="230" />
+			</div>
+			<div class="image7">
+				<img src="images/7.jpg" class="img-responsive" height="230" width="230" />
+			</div>
+			<div class="image8">
+				<img src="images/8.jpg" class="img-responsive" height="230" width="230" />
+			</div>
+		</div>
+			<div class="contactus">
+				<ul class="social">
+				<li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" id="facebook"></i></a></li>
+				<li><a href="https://twitter.com/" class="twitter" target="_blank"><i class="fa fa-twitter" id="twitter"></i></a></li>
+				<li><a href="https://www.quora.com/" class="quora" target="_blank"><i class="fa fa-quora" id="quora"></i></a></li>
+				<li><a href="https://www.instagram.com/accounts/login/?hl=en" class="instagram" target="_blank"><i class="fa fa-instagram" id="instagram"></i></a></li>
+				<li><a href="https://www.linkedin.com/" class="linkedin" target="_blank"><i class="fa fa-linkedin" id="linkedin"></i></a></li>
+				<br><br><br>	 
+			 <p><br><b>You can contact me in any way possible.<br>If you have something to share please enter in the message column below</b></p>
+			<div class="contactform">
+				<form action="self.html" method="post">
+					<textarea cols="4" rows="6" class="inputmessage">Your message!!</textarea>
+					<input type="button" name="" class="submitbutton"value="Submit">
+				</form>
+			</div>
+		</div>
+		</div>	
+		</div>
+	</div>
+</div>
+
+		<script type="text/javascript" src="js/jquery-3.3.1.min.map"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('a').click(function(){
+					var selected=$(this);
+					$('a').removeClass('active');
+					$(selected).addClass('active');
+				});
+
+				var $a=$('.a'),
+				$b=$('.b'),
+				$c=$('.c'),
+				$d=$('.d'),
+				$home=$('.home'),
+				$aboutus=$('.aboutus'),
+				$gallery=$('.gallery'),
+				$contactus=$('.contactus');
+
+				$a.click(function(){
+					$home.fadeIn();
+					$aboutus.fadeOut();
+					$gallery.fadeOut();
+					$contactus.fadeOut();
+				});
+				$b.click(function(){
+					$aboutus.fadeIn();
+					$home.fadeOut();
+					$gallery.fadeOut();
+					$contactus.fadeOut();
+				});
+				$c.click(function(){
+					$gallery.fadeIn();
+					$home.fadeOut();
+					$aboutus.fadeOut();
+					$contactus.fadeOut();
+				});
+				$d.click(function(){
+					$contactus.fadeIn();
+					$home.fadeOut();
+					$aboutus.fadeOut();
+					$gallery.fadeOut();
+				});
+			});
+		</script>
+	
+	</body>
+</html>

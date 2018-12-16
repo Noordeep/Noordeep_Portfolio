@@ -1,0 +1,299 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body{
+	width:100%;
+	height:100%;
+	font-size:14px;
+	font-weight:normal;
+}
+.background{
+	width: 50%;
+	height: 200%;
+	background-image: url(images/bg.jpg);
+	background-repeat: repeat-y;
+	background-size: 100%;
+	background-position: absolute;
+	overflow-y: auto;
+	float: right;
+}
+.nav{
+	width:25%;
+	height: auto;
+	position:absolute;
+	top:20%;
+	left:0;
+}
+.nav a{
+	text-decoration:  none;
+	font-size: 150%;
+	font-family: verdana;
+	font-weight: bold;
+	height:100%;
+	margin:5px 0;
+	float: left;
+	display: inline-block;
+	background-color: black;
+	color: white;
+	line-height: 400%;
+	text-align: center;
+	transition:500ms;
+}
+.nav a:hover{
+	background-color:white;
+	color:black;
+	width:70%;
+}
+.a{
+	width:100%;
+}
+.b{
+	width:100%;
+}
+.c{
+	width:100%;
+}
+.d{
+	width:100%;
+}
+.content{
+	position:absolute;
+	width:75%;
+	min-height: 100%;
+	height: auto;
+	right:0;
+	top:10%;
+}
+.home{
+	position:relative;
+	right:0;
+	bottom:0;
+	color:black;
+	font-family:verdana;
+}
+.home h1{
+	margin-left: 30%;
+	margin-top: 25%;
+	font-size:500%;
+	padding-right:90px;
+	border-bottom: 1px solid black;
+}
+.home h2{
+	margin-left: 30%;
+	font-size:250%;
+	padding:5px 0;
+	opacity:0.6;
+}
+.aboutus{
+	position:absolute;
+	right:0;
+	top:10px;
+	color:black;
+	font-family:century gothic;
+	padding:0 60px;
+	display:none;
+}
+.aboutus h2{
+	margin-bottom: 0%;
+	font-size: 250%;
+}
+.aboutus table{
+	margin: 0%;
+	font-size:125%;
+	line-height:100%;
+	margin-bottom:15px;
+	border-bottom: 1px solid black;
+}
+.aboutus h3{
+	margin-top: 7%;
+	margin-left: 0;
+	font-size: 250%;
+}
+.aboutus h4{
+	margin-top: 7%;
+	margin-left: 0;
+	font-size: 250%;
+}
+.aboutus p{
+	font-size: 125%;
+}
+.aboutus li{
+	font-size: 125%;
+}
+.gallery{
+	position:relative;
+	right:0;
+	top: 10px;
+	color: white;
+	padding:0 60px;
+	display: none;
+}
+
+.gallery .image1{
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:10%;
+}
+.gallery .image2{
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:40%;
+}
+.gallery .image3{
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:70%;
+}
+.gallery .image4{
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:70%;
+	top:175px;
+}
+.gallery .image5{
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:10%;
+	top:250px;
+}
+.gallery .image6{
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:40%;
+	top:250px;
+}
+.gallery .image7{
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:40%;
+	top:500px;
+}
+.gallery .image8{
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:70%;
+	top:390px;
+}
+.image img{
+	width:100%;
+	transition:all ease 0.5%;
+	-webkit-transition:all ease 0.5%;
+	transform:scale(1);
+	-webkit-transform:scale(1);
+}
+
+.image6 img:hover{
+	transform:scale(1.2);
+	-webkit-transform:scale(1.2);
+}
+.image7 img:hover{
+	transform:scale(1.2);
+	-webkit-transform:scale(1.2);
+}
+.image1 img:hover{
+	transform:scale(1.2);
+	-webkit-transform:scale(1.2);
+}
+.image2 img:hover{
+	transform:scale(1.2);
+	-webkit-transform:scale(1.2);
+}
+.image3 img:hover{
+	transform:scale(1.2);
+	-webkit-transform:scale(1.2);
+}
+.image4 img:hover{
+	transform:scale(1.2);
+	-webkit-transform:scale(1.2);
+}
+.image5 img:hover{
+	transform:scale(1.2);
+	-webkit-transform:scale(1.2);
+}
+.contactus{
+	position: absolute;
+	right:0;
+	top:0%;
+	color:white;
+	padding:0 60px;
+	display:none;
+}
+.contactus p{
+	font-size:150%;
+	line-height:28px;
+	margin-bottom:15px;
+	color:black;
+}
+.social li{
+	display: block;
+	margin:0;
+	padding:0;
+	width:16.666666667%;
+	float:left;
+}
+.social i{
+	color:;
+	font-size:190%;
+	opacity:;
+	margin:0;
+	text-align:center;
+	width:100%;
+	padding:4%;
+	box-sizing:border-box;
+	color:white;
+}
+.social i:hover{
+	opacity:;
+}
+#facebook{
+	background:#3A5795;
+}
+#twitter{
+	background:#5EA9DD;
+}
+#instagram{
+	background:#527FA4;
+}
+#quora{
+	background:#D95232;
+}
+#linkedin{
+	background:#5EA9DD;
+}
+.contactus p{
+	font-size:150%;
+}
+.inputmessage{
+	width:55%;
+	height:80%;
+	border:3px solid grey;
+	color:black;
+	background-color:rgba(192,192,192,0.3);
+	font-size:150%;
+	padding:0 10px;
+	float:left;
+} 
+.submitbutton{
+	width:30%;
+	height:100%;
+	font-family:arial;
+	background-color:solid grey;
+	color:black;
+	font-size:100%;
+	border:solid grey;
+	font-weight: bold;
+	float:left;
+	clear:both;
+	margin-top: 25px;
+}
+
+
